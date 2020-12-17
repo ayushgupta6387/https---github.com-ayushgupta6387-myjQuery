@@ -1,0 +1,60 @@
+<!-- ----------------------------------------------------------- EVENTS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+</head>
+<body>
+    <!-- ------------------------------------------------  EVENTS -->
+    <div class="container mt-3">
+    <h1 class="text-center">jQuery Events</h1>
+    <hr>
+    <h2 class="text-center">1. Mouse Events</h2>
+    <div class="box text-center p-3 mt-3 border border-dark">
+        <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis blanditiis repellendus explicabo ducimus molestias omnis qui saepe libero fugiat ullam impedit a, eveniet odit ipsa asperiores maxime non id ad nam rem. Ex, asperiores maxime. Accusamus voluptas quod, vero distinctio commodi corporis esse dolorum voluptatibus eius voluptate quis itaque assumenda.</p>
+    </div>
+    <hr>
+    <h2 class="text-center">2. Keyboard Events</h2>
+    <ul class="list-unstyled p-3 text-center border border-muted">
+        <li>Keypress - Apply for textual keys</li>
+        <li>Keyup</li>
+        <li>Keydown - Apply for functional keys </li>
+    </ul>
+    <h2 class="text-center">3. Form Events</h2>
+        <hr>
+        <form action="" id="myform">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control">
+            </div>
+            <div class="form-group">
+               <select name="" class="form-control" id="age">
+                   <option value="">Select Age</option>
+                   <option value="age<18">18</option>
+                   <option value="age<40">40</option>
+                   <option value="age<60">60</option>
+               </select>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary mt-3">
+            <!-- used for select event -->
+            <button class="copy mt-3 btn btn-secondary">Copy to Clipboard</button>
+        </form>
+        <!-- to display age used for change event -->
+ <div class="content border border-primary mt-3 p-3"></div>
+ <div>--------------</div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
